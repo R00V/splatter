@@ -1,6 +1,3 @@
-//hi farha :3
-// ffs
-
 // Dear ImGui: standalone example application for DirectX 11
 // If you are new to Dear ImGui, read documentation from the docs/ folder + read the top of imgui.cpp.
 // Read online: https://github.com/ocornut/imgui/tree/master/docs
@@ -186,7 +183,7 @@ int main(int, char**)
                 draw_list->PushClipRect(canvas_pos, ImVec2(canvas_pos.x + canvas_size.x, canvas_pos.y + canvas_size.y), true);      // clip lines within the canvas (if we resize it, etc.)
                 
                 float rad = 50.5f;
-                /*for (int i = 0; i < points.Size - 1; i += 2) {
+                for (int i = 0; i < points.Size - 1; i += 2) {
                         drawBrush(draw_list, ImVec2(canvas_pos.x + points[i].x, canvas_pos.y + points[i].y), 15, IM_COL32(255, 255, 255, 255));
                         drawBrush(draw_list, ImVec2(canvas_pos.x + points[i+1].x, canvas_pos.y + points[i+1].y), 15, IM_COL32(255, 255, 255, 255));
                         //ImGui::GetWindowDrawList()->AddCircleFilled(ImGui::GetIO().MousePos, 10, IM_COL32(255, 255, 255, 255));
@@ -199,7 +196,7 @@ int main(int, char**)
                         //draw_list->AddCircleFilled(ImVec2(canvas_pos.x + points[i].x, canvas_pos.y + points[i].y), rad, IM_COL32(255, 255, 255, 255), 6);
 
                         //draw_list->AddLine(ImVec2(canvas_pos.x + points[i].x, canvas_pos.y + points[i].y), ImVec2(canvas_pos.x + points[i + 1].x, canvas_pos.y + points[i + 1].y), IM_COL32(255, 255, 255, 255), 2.0f);
-                    }*/
+                    }
                    
                 draw_list->PopClipRect();
                 if (adding_preview)
